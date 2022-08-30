@@ -1,0 +1,33 @@
+{
+  "name": "npm-module-check",
+  "version": "0.0.1",
+  "description": "A cli tool for upgrading dependencies to latest version",
+  "main": "bin/index.js",
+  "bin": {
+    "nmc": "bin/index.js"
+  },
+  "files": ["bin"],
+  "scripts": {
+    "build": "tsc",
+    "link-module": "npm link",
+    "dev": "nodemon --config nodemon.json --exec \"npm run build && npm run link-module\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EtaJx/npm-module-check.git"
+  },
+  "keywords": ["npm", "package", "version", "latest", "node_modules", "packages", "latest version","package version","modules version", "node_modules version"],
+  "author": "EtaJx",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^18.7.4",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
+  }
+}
